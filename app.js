@@ -1,7 +1,7 @@
 const http = require('http');
 
 http.createServer(function (req, res) {
-  res.write("On the way to being a full snacl engineer!");
+  res.write("On the way to being a full SNACK engineer!");
   res.end();
 }).listen(3000);
 
