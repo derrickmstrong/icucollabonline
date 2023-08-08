@@ -27,7 +27,7 @@ wss.broadcast = (data) => {
 wss.on('connection', (ws) => {
   const numClients = wss.clients.size;
   ws.send('Welcome to the WebSocket server!');
-  ws.send(`There are ${numClients} other clients connected at this time.`);
+  ws.send(`There are ${numClients} clients connected at this time.`);
   console.log('Client connected', numClients);
   ws.on('close', (msg) => {
       console.log(`Client disconnected. There are ${numClients} clients connected at this time.`);
